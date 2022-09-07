@@ -2,6 +2,10 @@
   padding: 60px;
   margin-top: 80px;
   text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background: linear-gradient(45deg, $red 0%, $orange 100%);
   color: $white;
   font-size: 30px;
