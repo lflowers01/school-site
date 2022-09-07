@@ -1,7 +1,12 @@
-.banner {
-  width: 100%;
-  height: 150px;
-  background-color: magenta;
-  top: 80px;
-  display: flex;
+.header {
+  padding: 60px;
+  margin-top: 80px;
+  text-align: center;
+  background: linear-gradient(45deg, $red 0%, $orange 100%);
+  color: $white;
+  font-size: 30px;
+  text-align: center;
+  .header *:hover {
+    scale: 1.05;
+  }
 }
