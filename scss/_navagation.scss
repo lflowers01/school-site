@@ -78,7 +78,7 @@
     box-shadow: inset 2px 2px 1px rgba(0, 0, 0, 0.15);
     color: $black;
     transition: all 100ms ease-in;
-    scale: 1;
+    scale: 0.9975;
   }
 }
 
@@ -98,18 +98,24 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   transition: all 250ms ease-in-out;
+  transform: translateY(var(--y));
   &:hover {
     scale: 1.075;
     text-shadow: 0px 0px 32px rgba(255, 151, 77, 0.3);
     filter: saturate(1.5);
-    filter: contrast(1.5);
   }
   &:not(:hover) {
     scale: 1;
     transition: all 100ms ease-out;
     text-shadow: 0px 0px 16px rgba(255, 151, 77, 0.25);
     filter: saturate(1);
-    filter: contrast(1);
+  }
+  &:active {
+    scale: 1;
+    transition: all 100ms ease-out;
+    text-shadow: 0px 0px 16px rgba(255, 151, 77, 0.25);
+    filter: saturate(1);
+    --y: 1px;
   }
 }
 
