@@ -169,7 +169,6 @@ body {
   filter: saturate(1.1);
   filter: contrast(1.1);
   --y: -2px;
-  border-radius: 15px;
 }
 .button:not(:hover) {
   --y: 0
