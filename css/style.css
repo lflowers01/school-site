@@ -311,4 +311,39 @@ main img:not(:hover) {
   font-size: 11;
   margin-top: 40px;
   padding-top: 20px;
+}
+
+.enav {
+  width: 100%;
+  height: 80px;
+  background: hsl(263deg, 0%, 15%);
+  box-shadow: 0px 4px 4px rgba(37, 36, 40, 0.2);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  text-align: center;
+  float: center;
+}
+.enav .elinks {
+  text-align: center;
+}
+.enav .elinks a {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 27px;
+  align-items: center;
+  text-align: center;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 40px;
+  color: hsl(263deg, 0%, 97%);
+  border-radius: 50px;
+  transition: all 250ms ease-in-out;
 }/*# sourceMappingURL=style.css.map */
