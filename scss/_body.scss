@@ -23,7 +23,7 @@ main {
     font-size: 20;
     line-height: 2;
   }
-  img {
+  img:not(.pdf) {
     transition: all 50ms ease-in-out;
     &:hover {
       scale: 2;
@@ -70,4 +70,22 @@ main {
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.pdf {
+  position: flex;
+  display: block;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  float: center;
+  justify-items: center;
+  border-radius: 50px;
 }
