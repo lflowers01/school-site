@@ -101,19 +101,19 @@
   transform: translateY(var(--y));
   &:hover {
     scale: 1.075;
-    text-shadow: 0px 0px 32px rgba(255, 151, 77, 0.3);
+    text-shadow: 0px 0px 32px $red;
     filter: saturate(1.5);
   }
   &:not(:hover) {
     scale: 1;
     transition: all 100ms ease-out;
-    text-shadow: 0px 0px 16px rgba(255, 151, 77, 0.25);
+    text-shadow: 0px 0px 16px $red;
     filter: saturate(1);
   }
   &:active {
     scale: 1;
     transition: all 100ms ease-out;
-    text-shadow: 0px 0px 16px rgba(255, 151, 77, 0.25);
+    text-shadow: 0px 0px 16px $red;
     filter: saturate(1);
     --y: 1px;
   }
