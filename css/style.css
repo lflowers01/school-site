@@ -11,6 +11,8 @@ html {
 *::after {
   box-sizing: inherit;
   text-decoration: none;
+  transition: all;
+  transition-timing-function: ease-in-out;
 }
 
 body {
