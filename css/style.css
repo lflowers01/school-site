@@ -4,6 +4,7 @@ html {
   scroll-behavior: smooth;
   max-width: 100%;
   overflow-x: hidden;
+  scroll-margin-block: 80px;
 }
 
 *,
@@ -250,6 +251,9 @@ body {
     transform: translate(0, 0) rotate(0deg);
   }
 }
+main a {
+  color: #544de5;
+}
 main * {
   margin: 1rem;
   font-weight: 700;
@@ -266,10 +270,14 @@ main .email:hover {
 main .email:not(:hover) {
   text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
+main .img {
+  border-radius: 25px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+}
 main img:not(.pdf) {
   transition: all 50ms ease-in-out;
 }
-main img:not(.pdf):hover {
+main img:not(.pdf):hover:not(.img) {
   scale: 2;
   border-radius: 40px;
   filter: contrast(50);
@@ -278,16 +286,29 @@ main img:not(.pdf):hover {
           animation: tilt-n-move-shaking 0.1s infinite;
   box-shadow: 0px 0px 200px rgb(255, 0, 0);
 }
-main img:not(.pdf):not(:hover) {
+main img:not(.pdf):not(:hover):not(.img) {
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
   scale: 1;
   border-radius: 50px;
 }
-main h1 {
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
   font-weight: bold;
+}
+main h1 {
+  text-align: center;
 }
 main p {
   text-align: justify;
+}
+
+.english {
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 .song {

@@ -17,6 +17,9 @@
 }
 
 main {
+  a {
+    color: $red;
+  }
   * {
     margin: 1rem;
     font-weight: 700;
@@ -33,9 +36,14 @@ main {
       text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
     }
   }
+  .img {
+    border-radius: 25px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+  }
   img:not(.pdf) {
     transition: all 50ms ease-in-out;
-    &:hover {
+
+    &:hover:not(.img) {
       scale: 2;
       border-radius: 40px;
       filter: contrast(50);
@@ -43,20 +51,32 @@ main {
       animation: tilt-n-move-shaking 0.1s infinite;
       box-shadow: 0px 0px 200px rgba(255, 0, 0, 1);
     }
-    &:not(:hover) {
+    &:not(:hover):not(.img) {
       box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
       scale: 1;
       border-radius: 50px;
     }
   }
-  h1 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-weight: bold;
+  }
+  h1 {
+    text-align: center;
   }
   p {
     text-align: justify;
   }
 }
 
+.english {
+  padding-left: 15%;
+  padding-right: 15%;
+}
 .song {
   margin: 0;
   padding: 0;
