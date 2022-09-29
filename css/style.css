@@ -134,19 +134,19 @@ body {
 .logo:hover {
   scale: 1.075;
   text-shadow: 0px 0px 32px #544de5;
-  filter: saturate(1.5);
+  filter: hue-rotate(-15deg);
 }
 .logo:not(:hover) {
   scale: 1;
   transition: all 100ms ease-out;
   text-shadow: 0px 0px 16px #544de5;
-  filter: saturate(1);
+  filter: hue-rotate(0deg);
 }
 .logo:active {
   scale: 1;
   transition: all 100ms ease-out;
   text-shadow: 0px 0px 16px #544de5;
-  filter: saturate(1);
+  filter: hue-rotate(0deg);
   --y: 1px;
 }
 
@@ -176,8 +176,7 @@ body {
   box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.25);
   text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
   scale: 1.075;
-  filter: saturate(1.1);
-  filter: contrast(1.1);
+  filter: hue-rotate(-15deg);
   --y: -2px;
 }
 .button:not(:hover) {
@@ -186,8 +185,7 @@ body {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
   scale: 1;
   transition: all 100ms ease-out;
-  filter: saturate(1);
-  filter: contrast(1);
+  filter: hue-rotate(0deg);
 }
 .button:active {
   transition: all 50ms ease-in;
@@ -216,7 +214,7 @@ body {
 }
 .header:hover {
   text-shadow: 0px 0px 32px rgba(0, 0, 0, 0.5);
-  filter: saturate(1.15);
+  filter: hue-rotate(-15deg);
 }
 
 @-webkit-keyframes tilt-n-move-shaking {

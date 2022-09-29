@@ -102,19 +102,19 @@
   &:hover {
     scale: 1.075;
     text-shadow: 0px 0px 32px $red;
-    filter: saturate(1.5);
+    filter: hue-rotate(-15deg);
   }
   &:not(:hover) {
     scale: 1;
     transition: all 100ms ease-out;
     text-shadow: 0px 0px 16px $red;
-    filter: saturate(1);
+    filter: hue-rotate(0deg);
   }
   &:active {
     scale: 1;
     transition: all 100ms ease-out;
     text-shadow: 0px 0px 16px $red;
-    filter: saturate(1);
+    filter: hue-rotate(0deg);
     --y: 1px;
   }
 }
@@ -145,8 +145,7 @@
     box-shadow: inset -2px -2px 1px rgba(0, 0, 0, 0.25);
     text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.25);
     scale: 1.075;
-    filter: saturate(1.1);
-    filter: contrast(1.1);
+    filter: hue-rotate(-15deg);
     --y: -2px;
   }
   &:not(:hover) {
@@ -155,8 +154,7 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
     scale: 1;
     transition: all 100ms ease-out;
-    filter: saturate(1);
-    filter: contrast(1);
+    filter: hue-rotate(0deg);
   }
   &:active {
     transition: all 50ms ease-in;
