@@ -41,11 +41,17 @@
     <main class="body">
       <img
         src="img/portrait.jpg"
-        style="height: 600px; margin: 100px; float: left; margin-top: 0"
+        style="
+          width: 31.25%;
+          margin: 100px;
+          float: left;
+          margin-top: 0;
+          margin-bottom: 0;
+        "
         alt="A pretend invisible person wearing a hat, glasses, and coat."
         class="shake"
       />
-      <div style="height: 600px; margin: 100px">
+      <div style="width: auto; margin: 100px">
         <h1>About Me</h1>
         <p style="font-size: 20px">
           Lucas is currently a 9th-grade student at Phoenix Coding Academy. He
@@ -69,10 +75,11 @@
           >
         </p>
       </div>
-      <div style="margin: 100px">
-        <h2 style="float: center; text-align: center">
-          Here are some of Lucas's favorite songs
-        </h2>
+      <div>
+        <div style="display: flex; justify-content: center">
+          <h2>Here are some of Lucas's favorite songs</h2>
+        </div>
+
         <div class="song-wrapper">
           <div class="song" style="display: inline-block">
             <iframe
