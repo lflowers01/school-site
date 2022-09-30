@@ -74,7 +74,6 @@ main {
   }
   img:not(.pdf):not(.img) {
     transition: all 50ms ease-in-out;
-
     &:hover:not(.img) {
       scale: 2;
       border-radius: 40px;
