@@ -2,6 +2,7 @@ let i;
 let r;
 function input() {
   let input = document.getElementById("input").value;
+  let output;
   console.log(input);
   let binaryOut = [];
   i = 0;
