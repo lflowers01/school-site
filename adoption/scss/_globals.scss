@@ -1,0 +1,35 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+b {
+  font-weight: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  text-decoration: none;
+  transition: all;
+  transition-timing-function: ease-in-out;
+}
+
+body {
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  line-height: 1.3;
+  background-color: rgb(250, 250, 250);
+  font-family: "Nunito", sans-serif;
+}
